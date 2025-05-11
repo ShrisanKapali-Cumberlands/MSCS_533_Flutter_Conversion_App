@@ -34,6 +34,7 @@ class ConverterScreen extends StatefulWidget {
 }
 
 class _ConverterScreenState extends State<ConverterScreen> {
+  // Setting the default values for the conversion application
   String category = 'Distance';
   String fromUnit = 'Miles';
   String toUnit = 'Kilometers';
@@ -41,7 +42,7 @@ class _ConverterScreenState extends State<ConverterScreen> {
 
   final _controller = TextEditingController();
 
-  // Define the units for each categor
+  // Define the units for each category
   final units = {
     'Distance': ['Miles', 'Kilometers'],
     'Weight': ['Pounds', 'Kilograms'],
@@ -53,8 +54,10 @@ class _ConverterScreenState extends State<ConverterScreen> {
   // Function to convert the value based on selected category and units
   void convert() {
     setState(() {
+      // If the input is empty, set the value to 0
       double value = double.tryParse(_controller.text) ?? 0;
 
+      // A switch case to handle different categories conversion
       switch (category) {
         // Conversion of Distance
         case 'Distance':

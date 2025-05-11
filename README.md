@@ -19,7 +19,7 @@ The application **converts various units** across different categories:
 - **Time**
 - **Volume**
 
-It also **includes screenshots** of the working application to demonstrate the UI and functionality.
+It also **includes word document** that contains screenshots of the working application to demonstrate the UI and functionality.
 
 ---
 
